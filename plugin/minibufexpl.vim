@@ -624,7 +624,6 @@ function! <SID>StartExplorer(sticky, delBufNum)
   let l:save_sc  = &showcmd
   let &report    = 10000
   set noshowcmd 
-  setlocal winfixheight
 
   call <SID>FindCreateWindow('-MiniBufExplorer-', -1, 1, 1)
 
@@ -647,6 +646,7 @@ function! <SID>StartExplorer(sticky, delBufNum)
   " them off for the MBE window
   setlocal foldcolumn=0
   setlocal nonumber
+  setlocal winfixheight
  
   if has("syntax")
     syn clear
@@ -1804,7 +1804,7 @@ endfunc " }}}
 "                       opened again unless you do a \mbe (or restart VIM).
 "                     o Removed spaces between "tabs" (even more mini :)
 "                     o Simplified MBE tab processing 
-"               6.0.6 o Fixed register overwrite bug found by Sébastien Pierre
+"               6.0.6 o Fixed register overwrite bug found by SÃ©bastien Pierre
 "               6.0.5 o Fixed an issue with window sizing when we run out of 
 "                       buffers.  
 "                     o Fixed some weird commenting bugs.  
