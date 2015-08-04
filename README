@@ -16,3 +16,7 @@ There are a growing number of optional features in this script that are enabled 
 NOTE: Some versions of vim don't support all of the key mappings that this script uses so you may experience degraded functionality. For example on Solaris SHIFT-TAB appears to fire the regular TAB mappings (same for console and gvim.) Also CONTROL+ARROWS appears to work in gvim on Solaris, but not in my xterm. All of the key bindings appear to work in Windows.
 
 [Thanks to Jeff Lanzarotta for his BufExplorer plugin (http://vim.sourceforge.net/scripts/script.php?script_id=42) that got me started down this slippery slope.]
+
+### My Modifications
+
+* add `winfixheight` option to the minibuf window such that <C-w>= won't change it's height.
