@@ -624,6 +624,7 @@ function! <SID>StartExplorer(sticky, delBufNum)
   let l:save_sc  = &showcmd
   let &report    = 10000
   set noshowcmd 
+  setlocal winfixheight
 
   call <SID>FindCreateWindow('-MiniBufExplorer-', -1, 1, 1)
 
