@@ -19,4 +19,4 @@ NOTE: Some versions of vim don't support all of the key mappings that this scrip
 
 ### My Modifications
 
-* add `winfixheight` option to the minibuf window such that <C-w>= won't change it's height.
+* add `winfixheight` option to the minibuf window such that \<C-w\>= won't change it's height.
